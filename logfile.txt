@@ -1,0 +1,1547 @@
+2024-05-05 15:50:56,575 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 15:51:04,315 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 15:51:04,315 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:00:21,080 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:00:52,724 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:00:52,724 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:19:17,165 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:19:51,062 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:19:51,063 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:20:06,702 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:25:09,240 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:25:09,247 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:25:23,172 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:25:42,122 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:25:42,122 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:47:14,226 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:47:42,760 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 87, in verifyPassword
+    update.message.reply_text("Пароль сложный.", parse_mode="MarkdownV2")
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+2024-05-05 16:48:06,809 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:48:06,809 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:48:34,348 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:48:43,381 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 87, in verifyPassword
+    update.message.reply_text("Пароль сложный.", parse_mode="MarkdownV2")
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+2024-05-05 16:49:14,952 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:49:14,952 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:49:27,799 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:49:39,912 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 87, in verifyPassword
+    update.message.reply_text("Пароль сложный.", parse_mode="MarkdownV2")
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+2024-05-05 16:49:43,577 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:49:43,578 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:49:56,204 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:54:57,294 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:54:57,294 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 16:55:15,224 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 16:59:21,932 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 16:59:21,932 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 17:37:16,085 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:42:49,630 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:44:44,378 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 17:44:44,378 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 17:45:35,913 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:47:07,033 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 17:47:07,034 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 17:47:25,549 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:48:25,767 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 17:48:25,767 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 17:54:09,635 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:55:51,969 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 17:55:51,970 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 17:56:00,539 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:56:17,725 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 17:56:17,726 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 17:56:54,203 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:58:13,266 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 17:59:26,399 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 17:59:26,400 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 18:03:51,400 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 18:04:33,543 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 18:04:33,544 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 18:07:47,744 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 18:09:05,667 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-05 18:09:05,825 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-05 18:09:05,826 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 66, in get_release
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-05 18:10:35,158 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 18:10:35,159 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 18:12:59,532 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 18:13:05,526 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-05 18:13:05,748 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-05 18:13:05,749 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 69, in get_release
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-05 18:13:16,772 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-05 18:13:16,929 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-05 18:13:16,930 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 69, in get_release
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-05 18:14:01,808 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 18:14:01,809 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 18:33:10,876 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 18:33:22,965 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-05 18:33:23,104 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-05 18:33:23,105 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 71, in get_release
+    client.connect(hostname=host, username=username, password=password, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-05 18:33:50,331 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 18:33:50,332 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 18:36:19,907 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 18:36:32,171 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-05 18:36:32,313 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-05 18:36:32,314 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 71, in get_release
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-05 18:36:46,520 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 18:36:46,521 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 18:40:50,139 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 18:40:54,703 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-05 18:40:54,803 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-05 18:42:56,726 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-05 18:42:56,727 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-05 23:59:24,804 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-05 23:59:56,240 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 105, in get_release
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-06 00:00:02,759 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-06 00:00:02,759 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-06 00:07:56,671 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-06 00:08:58,431 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-06 00:08:58,432 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-06 00:09:41,519 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-06 00:09:56,513 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-06 00:09:56,513 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-06 00:10:13,273 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-06 00:10:59,681 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-06 00:10:59,682 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-06 00:11:33,426 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-06 00:11:52,878 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:11:53,041 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:11:56,040 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:11:56,151 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:00,529 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:00,674 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:03,870 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:03,995 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:07,431 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:07,546 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:12,043 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:12,151 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:15,763 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:15,870 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:24,463 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:24,557 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:31,517 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:31,718 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:31,889 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 209, in get_ps
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is too long
+2024-05-06 00:12:36,854 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:36,953 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:42,595 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-06 00:12:42,721 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-06 00:12:43,799 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 221, in get_apt_list
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-05-06 00:12:52,189 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-06 00:12:52,190 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:07:01,034 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:07:16,491 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:07:16,602 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:07:38,042 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:07:38,114 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:07:43,014 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:07:43,111 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:09:44,564 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:09:44,654 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:10:31,197 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:10:31,197 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:10:42,467 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:10:47,520 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:10:47,649 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:17:13,396 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:17:13,499 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:23:07,637 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:23:07,637 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:23:18,312 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:23:32,501 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:23:32,575 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:24:02,093 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:24:02,094 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:28:04,516 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:28:14,666 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:28:14,809 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-07 12:28:14,810 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 196, in get_critical
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-07 12:28:27,030 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:28:27,030 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:30:04,237 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:30:20,586 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:30:20,709 - paramiko.transport - INFO - Authentication (password) failed.
+2024-05-07 12:30:20,709 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 196, in get_critical
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 485, in connect
+    self._auth(
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 818, in _auth
+    raise saved_exception
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+2024-05-07 12:30:45,184 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:30:45,185 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:31:04,969 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:31:08,174 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:31:08,174 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:31:36,052 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:31:46,242 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:31:46,243 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:32:13,157 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:32:15,068 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:32:15,068 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:32:45,481 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:32:45,847 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:32:45,953 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:32:47,335 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:32:47,336 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 12:33:38,357 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 12:33:38,756 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:33:38,853 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:33:57,999 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:33:58,090 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:34:34,793 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:34:34,884 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:34:37,995 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:34:38,074 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:34:40,644 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:34:40,791 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:34:43,106 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:34:43,202 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:34:51,569 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:34:51,657 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:34:55,903 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:34:55,995 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:35:00,228 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:35:00,307 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:35:07,675 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:35:07,753 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:35:13,121 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:35:13,198 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:35:18,716 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:35:18,795 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:35:22,454 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 12:35:22,532 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 12:35:46,600 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 12:35:46,601 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:01:15,504 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:01:20,150 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:01:20,152 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:01:33,786 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:01:41,791 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:01:41,999 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:02:42,633 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:02:42,634 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:06:40,313 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:06:51,326 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:06:51,488 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:06:51,720 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 228, in get_apt_list
+    update.message.reply_text(data.decode())
+AttributeError: 'str' object has no attribute 'decode'
+2024-05-07 13:07:19,274 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:07:19,275 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:07:47,916 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:07:53,217 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:07:53,371 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:07:53,955 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 228, in get_apt_list
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Text is too long
+2024-05-07 13:08:01,994 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:08:01,995 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:08:30,614 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:08:35,745 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:08:35,939 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:08:53,417 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:08:53,572 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:08:53,726 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 236, in get_apt_list
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 359, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2024-05-07 13:09:00,498 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:09:00,651 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:09:00,855 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 236, in get_apt_list
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 359, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2024-05-07 13:09:04,473 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:09:04,473 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:12:10,163 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:12:18,491 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:12:18,644 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:12:18,797 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 236, in get_apt_list
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 359, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2024-05-07 13:12:42,146 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:12:42,147 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:13:51,226 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:13:58,618 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:13:58,772 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:13:58,944 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 236, in get_apt_list
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 359, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+2024-05-07 13:14:50,941 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:14:50,942 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:17:50,489 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:17:56,543 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:17:56,863 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:17:57,134 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 236, in get_apt_list
+    update.message.reply_text(data.decode())
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is too long
+2024-05-07 13:18:32,137 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:18:32,137 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:18:39,625 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:18:45,309 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:18:45,506 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:19:04,112 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:19:04,113 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:19:17,573 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:19:25,288 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:19:25,441 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:19:56,973 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:19:56,973 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:31:38,805 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:31:49,474 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 35, in helpCommand
+    update.message.reply_text('*_bold and italic_* Help!', parse_mode='MarkdownV2', )
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '!' is reserved and must be escaped with the preceding '\'
+2024-05-07 13:31:59,978 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 35, in helpCommand
+    update.message.reply_text('*_bold and italic_* Help!', parse_mode='MarkdownV2', )
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '!' is reserved and must be escaped with the preceding '\'
+2024-05-07 13:32:18,540 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:32:18,541 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:32:23,277 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:33:39,931 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:33:39,932 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:33:44,036 - telegram.ext.updater - WARNING - Exiting immediately!
+2024-05-07 13:33:47,570 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:34:58,489 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:34:58,490 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:35:01,973 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:35:06,209 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 31, in start
+    update.message.reply_text(f'Добрый день, {user.full_name}!\n Чтобы войти в режим *Мониторинга системы*, воспользуйтесь командой /monitoring.\n Для работы с текстом воспользуйтесь командой /text', parse_mode='MarkdownV2')
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '!' is reserved and must be escaped with the preceding '\'
+2024-05-07 13:35:24,460 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:35:24,460 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:35:28,136 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:35:31,915 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 31, in start
+    update.message.reply_text(f'Добрый день, {user.full_name}\!\n Чтобы войти в режим *Мониторинга системы*, воспользуйтесь командой /monitoring.\n Для работы с текстом воспользуйтесь командой /text', parse_mode='MarkdownV2')
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+2024-05-07 13:35:56,405 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:35:56,406 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:36:04,162 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:36:21,760 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:36:21,761 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:38:18,164 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:38:38,651 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:38,909 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:38:41,443 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:41,609 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:38:44,057 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:44,212 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:38:47,298 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:47,444 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:38:51,164 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:51,317 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:38:54,052 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:54,343 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:38:56,878 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:38:57,029 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:00,928 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:39:01,085 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:05,511 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:39:05,676 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:09,605 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:39:09,763 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:19,198 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:39:19,367 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:26,268 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:39:26,450 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:33,766 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:39:33,939 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:39:34,079 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot.py", line 260, in get_services
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is too long
+2024-05-07 13:39:39,475 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:39:39,475 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:40:55,525 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:40:57,883 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:40:58,038 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:41:06,366 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:41:06,367 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:44:56,396 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:45:16,863 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 121, in get_release
+    connect(command)
+TypeError: connect() missing 2 required positional arguments: 'context' and 'input_command'
+2024-05-07 13:45:52,720 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:45:52,720 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:46:05,558 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:46:07,827 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:46:07,975 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:46:18,620 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:46:18,620 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:50:39,755 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:50:58,234 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:50:58,412 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:00,591 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:00,828 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:04,019 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:04,274 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:07,300 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:07,526 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:12,130 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:12,277 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:15,225 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:15,377 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:17,580 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:17,732 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:21,878 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:22,029 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:26,188 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:26,342 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:30,338 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:30,533 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:38,744 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:38,891 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:44,285 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:44,513 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:49,293 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:51:49,449 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:51:49,589 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 183, in get_services
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 116, in connect
+    update.message.reply_text(data)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is too long
+2024-05-07 13:52:07,396 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:52:07,396 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 13:58:38,118 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 13:58:40,596 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.6p1)
+2024-05-07 13:58:40,769 - paramiko.transport - INFO - Authentication (password) successful!
+2024-05-07 13:58:54,607 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 13:58:54,608 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:02:25,239 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:05:53,797 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:05:53,798 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:07:03,596 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:07:30,501 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:07:30,502 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:09:26,672 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:09:35,848 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 29, in start
+    update.message.reply_text(f'Добрый день, {user.full_name}\!\nЧтобы войти в раздел *Мониторинга системы*, воспользуйтесь командой /monitoring\.\nКоманда /findPhoneNumbers - поиск телефонных номеров\;\nКоманда /findEmails - поиск адресов электронной почты', parse_mode='MarkdownV2')
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '-' is reserved and must be escaped with the preceding '\'
+2024-05-07 14:09:41,361 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 29, in start
+    update.message.reply_text(f'Добрый день, {user.full_name}\!\nЧтобы войти в раздел *Мониторинга системы*, воспользуйтесь командой /monitoring\.\nКоманда /findPhoneNumbers - поиск телефонных номеров\;\nКоманда /findEmails - поиск адресов электронной почты', parse_mode='MarkdownV2')
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/message.py", line 764, in reply_text
+    return self.bot.send_message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 513, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 199, in _message
+    result = super()._message(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 332, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: character '-' is reserved and must be escaped with the preceding '\'
+2024-05-07 14:10:04,891 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:10:04,892 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:10:31,338 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:12:46,157 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:12:46,159 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:13:14,762 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:14:04,157 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:14:04,157 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:15:32,987 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:17:01,440 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:18:12,785 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:18:12,786 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:19:52,845 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:20:04,599 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:20:04,600 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:22:51,356 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:23:41,261 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:23:41,262 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:34:45,685 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:35:13,574 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/conversationhandler.py", line 626, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 201, in findEmails
+    emailRegex = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b)')
+  File "/usr/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.10/sre_parse.py", line 969, in parse
+    raise source.error("unbalanced parenthesis")
+re.error: unbalanced parenthesis at position 51
+2024-05-07 14:37:21,083 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:37:22,423 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:22,433 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:26,487 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:26,489 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:27,561 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:27,565 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:32,221 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:32,225 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:33,798 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:33,831 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:37,900 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:37,902 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:40,228 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:40,235 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:44,803 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:44,820 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:48,265 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:48,266 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:53,621 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:53,622 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:37:54,373 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:37:54,374 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:37:56,088 - telegram.ext.updater - WARNING - Exiting immediately!
+2024-05-07 14:38:05,721 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:38:06,333 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:06,335 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:10,416 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:10,419 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:11,482 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:11,483 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:15,640 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:15,643 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:17,210 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:17,212 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:21,372 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:21,372 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:23,686 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:23,688 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:28,335 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:28,340 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-05-07 14:38:30,001 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:38:30,004 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:44:44,014 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:56:51,467 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 14:56:51,468 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2024-05-07 14:57:24,091 - apscheduler.scheduler - INFO - Scheduler started
+2024-05-07 14:58:22,792 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 116, in get_release
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:04:28,262 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 178, in get_services
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:05:33,806 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 128, in get_df
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:05:38,346 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 116, in get_release
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:05:45,382 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 136, in get_w
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:05:59,046 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 148, in get_ps
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:06:02,118 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 174, in get_ss
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:06:05,190 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/mitina/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 178, in get_services
+    connect(update, context, command)
+  File "/home/mitina/devops/new_bot/bot copy.py", line 106, in connect
+    client.connect(hostname=host, username=userkali, password=passkali, port=port)
+  File "/home/mitina/.local/lib/python3.10/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.168.31.112
+2024-05-07 15:11:28,268 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2024-05-07 15:11:28,268 - apscheduler.scheduler - INFO - Scheduler has been shut down
