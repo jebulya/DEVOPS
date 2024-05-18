@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS emails(
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS phone_numbers(
+    id SERIAL PRIMARY KEY,
+    phone_number VARCHAR(50) NOT NULL
+);
