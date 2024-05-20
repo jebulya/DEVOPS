@@ -9,12 +9,12 @@ all:
     host01:
       DB_REPL_PORT: 1
       ansible_host: 192.168.132.140
-      ansible_user: root
+      ansible_user: ansible
       ansible_ssh_pass: 1
-      dir: /root/ansible
+      dir: /home/ansible/project
       RM_HOST: 192.168.132.138
       RM_PORT: 22
-      RM_USER: root
+      RM_USER: ansible
       RM_PASSWORD: 1
       DB_USER: postgres
       DB_PASSWORD: 1
@@ -24,5 +24,5 @@ all:
       github: https://github.com/jebulya/DEVOPS.git
     host02:
       ansible_host: 192.168.132.141
-      ansible_user: root
+      ansible_user: ansible
       ansible_ssh_pass: 1

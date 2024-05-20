@@ -1,6 +1,7 @@
 - name: instalation for all hosts
   hosts: all
-  gather_facts: false
+  gather_facts: true
+  become: yes
   tasks:
     - name: install postgresql
       package: 
@@ -17,7 +18,8 @@
 
 - name: db init
   hosts: host01
-  gather_facts: false
+  gather_facts: true
+  become: yes
   tasks:
     - name: copy
       copy:
@@ -56,13 +58,14 @@
         name: postgresql
         state: restarted
     - name: init.sql
-      command: psql -a -f /tmp/init.sql
-      become: true
-      become_user: postgres
+      command: sudo -u postgres psql -a -f /tmp/init.sql
+      environment:
+        PGPASSWORD: "{{ hostvars[inventory_hostname]['DB_PASSWORD'] }}"
 
 - name: repl config
   hosts: host01
-  gather_facts: false
+  gather_facts: true
+  become: yes
   tasks:
     - name: add to conf file
       blockinfile:
@@ -90,7 +93,8 @@
       
 - name: slave config and init
   hosts: host02
-  gather_facts: false
+  gather_facts: true
+  become: yes
   tasks:
     - name: delete directory
       command: rm -rf /var/lib/postgresql/{{ hostvars[inventory_hostname]['POSTGRES_VERSION'] }}/
@@ -101,6 +105,16 @@
         become_user: postgres
     - name: chown
       command: chown -R postgres:postgres /var/lib/postgresql/
+    - name: Create recovery.conf for replication
+      copy:
+        content: |
+          standby_mode = 'on'
+          primary_conninfo = 'host={{ hostvars[inventory_hostname]['DB_HOST'] }} port=5432 user={{ hostvars[inventory_hostname]['DB_REPL_USER'] }} password={{ hostvars[inventory_hostname]['DB_REPL_PASSWORD'] }}'
+          trigger_file = '/tmp/postgresql.trigger.5432'
+        dest: /var/lib/postgresql/{{ hostvars[inventory_hostname]['POSTGRES_VERSION'] }}/main/recovery.conf
+        owner: postgres
+        group: postgres
+        mode: '0600'
     - name: restart postgresql
       service:
         name: postgresql
@@ -108,7 +122,8 @@
 
 - name: python bot
   hosts: host01
-  gather_facts: false
+  gather_facts: true
+  become: yes
   tasks:
     - name: update
       command: apt update 
