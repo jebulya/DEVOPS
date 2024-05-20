@@ -349,23 +349,8 @@ def get_repl_logsCommand(update: Update, context):
 
 
 def get_repl_logs(update: Update, context):
-    logs_dir = '/var/log/postgres/'  
-    result = ''
-
-    try:
-        logger.info(f"Reading log files from directory: {logs_dir}")
-        for filename in os.listdir(logs_dir):
-            if filename.endswith('.log'):
-                logger.info(f"Found log file: {filename}")
-                with open(os.path.join(logs_dir, filename), 'r') as file:
-                    for line in file:
-                        if "repl" in line:
-                            result+= line
-        logger.debug(f"Log reading successful. Result length: {len(result)}")
-        update.message.reply_text(result[-1500:])
-    except Exception as e:
-        logger.error(f"Error reading log files: {e}")
-        update.message.reply_text("Произошла ошибка при чтении логов.")
+    command = 'cat /var/log/postgresql/postgresql-14-main.log | tail -n 20'
+    connect(update, context, command) 
 
 def echo(update: Update, context):
     update.message.reply_text(update.message.text)
