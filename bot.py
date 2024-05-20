@@ -349,8 +349,21 @@ def get_repl_logsCommand(update: Update, context):
 
 
 def get_repl_logs(update: Update, context):
-    command = 'cat /var/log/postgresql/postgresql-14-main.log | tail -n 20'
-    connect(update, context, command) 
+    host = os.getenv('DB_HOST')
+    port = os.getenv('DB_PORT')
+    user = os.getenv('DB_USER')
+    passw = os.getenv('DB_PASSWORD')
+
+    client = paramiko.SSHClient()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+    client.connect(hostname=host, username=user, password=passw, port=port)
+    stdin, stdout, stderr = client.exec_command('cat /var/log/postgresql/postgresql-14-main.log | tail -n 20')
+    data = stdout.read() + stderr.read()
+    client.close()
+    data = str(data).replace('\\n', '\n').replace('\\t', '\t')[2:-1]
+    update.message.reply_text(data)
+    return ConversationHandler.END
 
 def echo(update: Update, context):
     update.message.reply_text(update.message.text)
