@@ -349,7 +349,7 @@ def get_repl_logsCommand(update: Update, context):
 
 
 def get_repl_logs(update: Update, context):
-    logs_dir = '/var/log/postgres/'  
+    logs_dir = '/root'  
     result = ''
 
     try:
