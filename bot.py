@@ -349,21 +349,23 @@ def get_repl_logsCommand(update: Update, context):
 
 
 def get_repl_logs(update: Update, context):
-    host = os.getenv('DB_HOST')
-    port = os.getenv('DB_PORT')
-    user = os.getenv('DB_USER')
-    passw = os.getenv('DB_PASSWORD')
+    logs_dir = '/var/log/postgres/'  
+    result = ''
 
-    client = paramiko.SSHClient()
-    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
-    client.connect(hostname=host, username=user, password=passw, port=port)
-    stdin, stdout, stderr = client.exec_command('cat /var/log/postgresql/postgresql-14-main.log | tail -n 20')
-    data = stdout.read() + stderr.read()
-    client.close()
-    data = str(data).replace('\\n', '\n').replace('\\t', '\t')[2:-1]
-    update.message.reply_text(data)
-    return ConversationHandler.END
+    try:
+        logger.info(f"Reading log files from directory: {logs_dir}")
+        for filename in os.listdir(logs_dir):
+            if filename.endswith('.log'):
+                logger.info(f"Found log file: {filename}")
+                with open(os.path.join(logs_dir, filename), 'r') as file:
+                    for line in file:
+                        if "repl" in line:
+                            result+= line
+        logger.debug(f"Log reading successful. Result length: {len(result)}")
+        update.message.reply_text(result[-1500:])
+    except Exception as e:
+        logger.error(f"Error reading log files: {e}")
+        update.message.reply_text("Произошла ошибка при чтении логов.")
 
 def echo(update: Update, context):
     update.message.reply_text(update.message.text)
