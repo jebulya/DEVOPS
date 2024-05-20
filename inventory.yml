@@ -1,0 +1,28 @@
+all:
+  vars:
+    DB_REPL_USER: repl_user
+    DB_REPL_PASSWORD: 1
+    POSTGRES_VERSION: 14
+    DB_HOST: 192.168.132.140
+    DB_REPL_HOST: 192.168.132.141
+  hosts:
+    host01:
+      DB_REPL_PORT: 1
+      ansible_host: 192.168.132.140
+      ansible_user: root
+      ansible_ssh_pass: 1
+      dir: /root/ansible
+      RM_HOST: 192.168.132.138
+      RM_PORT: 22
+      RM_USER: root
+      RM_PASSWORD: 1
+      DB_USER: postgres
+      DB_PASSWORD: 1
+      DB_PORT: 5432
+      DB_DATABASE: db_bot
+      TOKEN: 6924289771:AAEn_7dDJ5cQK1hwz1B6rV2Toc3KkMHLHzM
+      github: https://github.com/jebulya/DEVOPS.git
+    host02:
+      ansible_host: 192.168.132.141
+      ansible_user: root
+      ansible_ssh_pass: 1
